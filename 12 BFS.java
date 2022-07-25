@@ -62,6 +62,7 @@ class BFS {
           //remove
           Pair rem = q.removeFirst();
           
+          //important condition for printing unique pairs.
           if(vis[rem.v] == true){
               continue;
           }
