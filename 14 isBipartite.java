@@ -99,9 +99,9 @@ class Bipartite {
                 }
            }
        }
-
-       // if this is returned means is either acyclic or has even number of edges in cyclic graph.
        return true;
+       // if this is returned means is either acyclic or has even number of edges in cyclic graph.
+       
        
    }
    
