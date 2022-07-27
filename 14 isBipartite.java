@@ -83,7 +83,9 @@ class Bipartite {
            Pair rem = q.removeFirst();
            
            if(vis[rem.v] !=-1){
+             //has cycle that is why in this if conditon
                if(rem.lvl != vis[rem.v]){
+                 //odd cycle condition that level don't match
                    return false;
                }
            }
@@ -97,6 +99,8 @@ class Bipartite {
                 }
            }
        }
+
+       // if this is returned means is either acyclic or has even number of edges in cyclic graph.
        return true;
        
    }
